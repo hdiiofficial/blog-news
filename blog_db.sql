@@ -53,7 +53,7 @@ CREATE TABLE `comments` (
   `user_id` int(100) NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `comment` varchar(1000) NOT NULL,
-  `date` DATETIME NOT NULL,
+  `date` DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
