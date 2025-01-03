@@ -66,7 +66,7 @@ CREATE TABLE `likes` (
   `id` int(100) NOT NULL,
   `user_id` int(100) NOT NULL,
   `admin_id` int(100) NOT NULL,
-  `post_id` int(100) NOT NULL,
+  `post_id` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
