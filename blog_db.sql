@@ -53,7 +53,7 @@ CREATE TABLE `comments` (
   `user_id` int(100) NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `comment` varchar(1000) NOT NULL,
-  `date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -83,7 +83,7 @@ CREATE TABLE `posts` (
   `content` varchar(10000) NOT NULL,
   `category` varchar(50) NOT NULL,
   `image` varchar(100) NOT NULL,
-  `date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
