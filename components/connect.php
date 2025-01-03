@@ -1,10 +1,8 @@
 <?php
 
-$host = '127.0.0.1';
-$dbname = 'blog_db';
-$username = 'userrr';
-$password = 'user123';
-
-$pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   $db_name = 'mysql:host=localhost;dbname=blog_db';
+   $user_name = 'root';
+   $user_password = '';
+   $conn = new PDO($db_name, $user_name, $user_password);
+   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>
