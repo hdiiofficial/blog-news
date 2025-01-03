@@ -1,3 +1,3 @@
 <footer class="footer">
-   &copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!
+   &copy; copyright@2025 <span>IPNU IPPNU PAC BANSARI</span>
 </footer>
