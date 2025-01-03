@@ -6,8 +6,8 @@
    try {
       $conn = new PDO($db_name, $user_name, $user_password);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      echo "Oke"
+      echo "Oke";
          } catch (PDOException $e) {
-$e->getMessage()
+      echo "fail" , $e->getMessage();
    }
 ?>
