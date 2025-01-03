@@ -38,7 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `password`) VALUES
-(1, 'admin', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2');
+(1, 'admin', 'hdiiofficial');
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ CREATE TABLE `comments` (
   `user_id` int(100) NOT NULL,
   `user_name` varchar(50) NOT NULL,
   `comment` varchar(1000) NOT NULL,
-  `date` date NOT NULL DEFAULT CURDATE()
+  `date` date NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -66,7 +66,7 @@ CREATE TABLE `likes` (
   `id` int(100) NOT NULL,
   `user_id` int(100) NOT NULL,
   `admin_id` int(100) NOT NULL,
-  `post_id` int(100) NOT NULL
+  `post_id` int(100) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -83,7 +83,7 @@ CREATE TABLE `posts` (
   `content` varchar(10000) NOT NULL,
   `category` varchar(50) NOT NULL,
   `image` varchar(100) NOT NULL,
-  `date` date NOT NULL DEFAULT CURDATE(),
+  `date` date NOT NULL DEFAULT CURRENT_TIMESTAMP
   `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
